@@ -1,0 +1,26 @@
+{
+    "homepage": "https://gitextensions.github.io/",
+    "version": "3.0.1.4933",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/gitextensions/gitextensions/releases/download/v3.0.1/GitExtensions-Portable-3.0.1.4933.zip",
+    "hash": "5512b6809c851867a6322f97515ec2d09a03335e5ab1feb81765c158c7a81085",
+    "bin": [
+        [
+            "GitExtensions\\GitExtensions.exe",
+            "gite"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "GitExtensions\\GitExtensions.exe",
+            "Git Extensions"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/gitextensions/gitextensions/releases",
+        "regex": "GitExtensions-Portable-([\\d.]+).zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gitextensions/gitextensions/releases/download/v$matchHead/GitExtensions-Portable-$version.zip"
+    }
+}
