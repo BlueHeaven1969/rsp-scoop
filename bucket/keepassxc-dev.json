@@ -1,0 +1,52 @@
+{
+    "homepage": "https://keepassxc.org/",
+    "version": "2.4.0-beta2",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.4.0-beta2/KeePassXC-2.4.0-beta2-Win64-Portable.zip",
+            "hash": "8f1cf6d29120420945bfd0a7c3b95de4fea3abef8a4e5616890ac296f7ff233e",
+            "extract_dir": "KeePassXC-2.4.0-beta2-Win64"
+        },
+        "32bit": {
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.4.0-beta2/KeePassXC-2.4.0-beta2-Win32-Portable.zip",
+            "hash": "3dec31f814e005ea6b9769126822753746781398e395e4681446d153fe05ed06",
+            "extract_dir": "KeePassXC-2.4.0-beta2-Win32"
+        }
+    },
+    "bin": [
+        "KeePassXC.exe",
+        "keepassxc-cli.exe"
+    ],
+    "persist": "keepassxc.ini",
+    "shortcuts": [
+        [
+            "KeePassXC.exe",
+            "KeePassXC"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/keepassxreboot/keepassxc/releases",
+        "regex": "KeePassXC-(.*)-Win64-portable.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/keepassxreboot/keepassxc/releases/download/$version/KeePassXC-$version-Win64-Portable.zip",
+                "extract_dir": "KeePassXC-$version-Win64",
+                "hash": {
+                    "find": "([a-fA-F0-9]+)\\s+\\*?(?:KeePassXC-([\\d.]+)-Win64(-Portable)?.zip)",
+                    "url": "$url.DIGEST"
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/keepassxreboot/keepassxc/releases/download/$version/KeePassXC-$version-Win32-Portable.zip",
+                "extract_dir": "KeePassXC-$version-Win32",
+                "hash": {
+                    "find": "([a-fA-F0-9]+)\\s+\\*?(?:KeePassXC-([\\d.]+)-Win32(-Portable)?.zip)",
+                    "url": "$url.DIGEST"
+                }
+            }
+        }
+    }
+}
