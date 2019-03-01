@@ -22,5 +22,10 @@
     },
     "autoupdate": {
         "url": "https://github.com/gitextensions/gitextensions/releases/download/v$matchHead/GitExtensions-Portable-$version.zip"
-    }
+    },
+	"persist": [
+		"GitExtensions.settings",
+		"Images",
+		"Recent"
+	]
 }
