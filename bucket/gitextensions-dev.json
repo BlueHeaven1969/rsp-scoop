@@ -28,8 +28,8 @@
 		"Move-Item \"$persist_dir\\GitExtensionsShellEx32.dll\" \"$dir\\GitExtensions\""
 	],
 	"persist": [
-		"GitExtensions.settings",
-		"Images",
-		"Recent"
+		"GitExtensions\\GitExtensions.settings",
+		"GitExtensions\\Images",
+		"GitExtensions\\Recent"
 	]
 }
