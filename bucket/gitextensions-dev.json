@@ -23,6 +23,10 @@
     "autoupdate": {
         "url": "https://github.com/gitextensions/gitextensions/releases/download/v$matchHead/GitExtensions-Portable-$version.zip"
     },
+	"post_install": [
+		"Move-Item \"$persist_dir\\GitExtensionsShellEx64.dll\" \"$dir\\GitExtensions\"",
+		"Move-Item \"$persist_dir\\GitExtensionsShellEx32.dll\" \"$dir\\GitExtensions\"",
+	],
 	"persist": [
 		"GitExtensions.settings",
 		"Images",
