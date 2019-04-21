@@ -1,0 +1,36 @@
+{
+    "homepage": "https://www.digikam.org",
+    "version": "6.1.0",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "32bit": {
+            "url": "http://download.kde.org/stable/digikam/6.1.0/digiKam-6.1.0-Win32.exe#/dl.7z",
+            "hash": "fb870263a8bb2bd178590dfacfe68110b68d8c5b0ca53606084162a1a5e42b44"
+        },
+        "64bit": {
+            "url": "http://download.kde.org/stable/digikam/6.1.0/digiKam-6.1.0-Win64.exe#/dl.7z",
+            "hash": "35ca33728602702b4292d897b61649e31a87d56fece8d0b3c9aa3d8e75bdb2d2"
+        }
+    },
+    "bin": "digikam.exe",
+    "shortcuts": [
+        [
+            "digikam.exe", "digiKam"
+        ]
+    ],
+    "checkver": {
+        "url": "https://download.kde.org/stable/digikam/",
+        "regex": "([\\d.]+)/",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "http://download.kde.org/stable/digikam/$version/digiKam-$version-Win32.exe#/dl.7z"
+            },
+            "64bit": {
+                "url": "http://download.kde.org/stable/digikam/$version/digiKam-$version-Win64.exe#/dl.7z"
+            }
+        }
+    }
+}
