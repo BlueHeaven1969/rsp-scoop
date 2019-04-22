@@ -1,0 +1,20 @@
+{
+    "homepage": "http://sigrok.org",
+    "version": "nightly",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "32bit": {
+            "url": "https://sigrok.org/jenkins/job/sigrok-cross-mingw/buildtype=static,debugtype=release,platform=cross-i686-w64-mingw32/lastSuccessfulBuild/artifact/pulseview-NIGHTLY-32bit-static-release-installer.exe#/dl.7z"
+        },
+        "64bit": {
+            "url": "https://sigrok.org/jenkins/job/sigrok-cross-mingw/buildtype=static,debugtype=release,platform=cross-x86_64-w64-mingw32/lastSuccessfulBuild/artifact/pulseview-NIGHTLY-64bit-static-release-installer.exe#/dl.7z"
+        }
+    },
+    "bin": "pulseview.exe",
+    "shortcuts": [
+        [
+            "pulseview.exe",
+            "PulseView"
+        ]
+    ]
+}
