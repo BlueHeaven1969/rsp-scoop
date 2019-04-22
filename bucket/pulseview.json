@@ -1,15 +1,15 @@
 {
     "homepage": "http://sigrok.org",
-    "version": "",
+    "version": "0.4.1",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "32bit": {
-            "url": "https://sigrok.org/download/binary/sigrok-cli/sigrok-cli-0.7.1-i686-installer.exe#/dl.7z",
-            "hash": "fb97eef3f3b68758e0c9fb471bf1daee5771530ac244dcf4e01e1acdcce64208"
+            "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-32bit-static-release-installer.exe#/dl.7z",
+            "hash": "93ff2a99ff502060826162901518240503775cb2938869536ae07068831141cc"
         },
         "64bit": {
-            "url": "https://sigrok.org/download/binary/sigrok-cli/sigrok-cli-0.7.1-x86_64-installer.exe#/dl.7z",
-            "hash": "efbb078edf342f48f36c3b68c180c7a1cdcec9f8ad6bf6237cc8175e3763e651"
+            "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-64bit-static-release-installer.exe#/dl.7z",
+            "hash": "e40e24cd90459a865a37028b9b9b72100db9646b2fbd30135c18b2ee96332bcd"
         }
     },
     "autoupdate": {
@@ -24,7 +24,7 @@
     },
     "checkver": {
         "url": "https://sigrok.org/wiki/Downloads",
-        "regex": "pulseview-i([\\d.]+)-64bit-static-release-installer"
+        "regex": "pulseview-([\\d.]+)-64bit-static-release-installer"
     },
     "bin": "pulseview.exe",
     "shortcuts": [
