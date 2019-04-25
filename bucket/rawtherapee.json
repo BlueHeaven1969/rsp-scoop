@@ -4,6 +4,10 @@
     "license": "GPL-2.0-only",
     "url": "http://rawtherapee.com/releases_head/windows/RawTherapee_5.5_WinVista_64.zip",
     "hash": "e47283c7d2b92f04ed4386186bd0d0b45609372284cb18f142d7a8728fdde8e9",
+    "innosetup": true,
+    "installer": {
+
+    },
     "checkver": {
         "url": "https://rawtherapee.com/downloads",
         "regex": "RT ([\\d.]+)</a> for Windows"
