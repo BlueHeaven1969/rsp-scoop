@@ -1,5 +1,6 @@
 {
     "homepage": "http://sigrok.org",
+    "description": "Qt based logic analyzer, oscilloscope and MSO GUI for sigrok (nightly build)",
     "version": "nightly",
     "license": "GPL-3.0-or-later",
     "architecture": {

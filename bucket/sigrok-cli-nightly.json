@@ -1,5 +1,6 @@
 {
     "homepage": "http://sigrok.org",
+    "description": "Command-line frontend for sigrok (nightly build)",
     "version": "nightly",
     "license": "GPL-3.0-or-later",
     "architecture": {

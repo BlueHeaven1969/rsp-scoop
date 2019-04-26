@@ -1,5 +1,6 @@
 {
     "homepage": "https://keepassxc.org/",
+    "descriptoin": "KeePass Cross-Platform Community Edition (latest dev build from GitHub)",
     "version": "2.4.1",
     "license": "GPL-2.0-only",
     "architecture": {

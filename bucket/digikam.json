@@ -1,5 +1,6 @@
 {
     "homepage": "https://www.digikam.org",
+    "description": "Professional Photo Management with the Power of Open Source",
     "version": "6.1.0",
     "license": "GPL-2.0-only",
     "architecture": {

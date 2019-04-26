@@ -2,6 +2,7 @@
     "homepage": "https://gitextensions.github.io/",
     "version": "3.0.2.5232",
     "license": "GPL-3.0-only",
+    "description": "Git Standalone UI Tool. Installs latest dev version from GitHub",
     "url": "https://github.com/gitextensions/gitextensions/releases/download/v3.0.2/GitExtensions-Portable-3.0.2.5232.zip",
     "hash": "a826e36826296c752ef6f37e8fec629c4c7af56de5755435ae635cf305ff5a06",
     "bin": [
