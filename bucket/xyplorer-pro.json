@@ -1,0 +1,28 @@
+{
+    "homepage": "https://www.xyplorer.com",
+    "version": "19.90.0100",
+    "license": "Shareware",
+    "description": "File Manager for Windows",
+    "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
+    "hash": "b1813aa78cdab5088f54ecae410953c2673d0143ef5133322dcb20baecdfa44e",
+    "bin": [
+        [
+            "XYPlorer.exe",
+            "XYPlorer"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "XYPlorer.exe",
+            "XYPlorer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.xyplorer.com",
+        "regex": "Download the latest version[\\s\\S]*href=\"(?<download>.*?)\"[\\s\\S]*class=\"smaller\">(?<version>[\\d.]+) "
+    },
+    "autoupdate": {
+        "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip"
+    },
+    "persist": "Data"
+}
