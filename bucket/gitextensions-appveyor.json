@@ -1,0 +1,37 @@
+{
+    "homepage": "https://gitextensions.github.io/",
+    "version": "3.1.0.5749",
+    "license": "GPL-3.0-only",
+    "notes": "Post install script will convert app to portable mode.",
+    "url": "https://ci.appveyor.com/api/buildjobs/g54sg7xe9ryvm0hw/artifacts/Setup/GitExtensions-Portable-3.1.0.5749.zip",
+    "hash": "386b9773f55d1554f2dc68444efcd17c38ea2606c1e898d0a5f769d5ca7d14dc",
+    "bin": [
+        [
+            "GitExtensions\\GitExtensions.exe",
+            "gite"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "GitExtensions\\GitExtensions.exe",
+            "Git Extensions"
+        ]
+    ],
+    "checkver": {
+        "url": "https://ci.appveyor.com/api/projects/gitextensions/gitextensions/branch/master",
+        "regex": "\"jobId\":\"(?<buildjob>.*?)\".*\"version\":\"(?<version>[\\d.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://ci.appveyor.com/api/buildjobs/$matchBuildjob/artifacts/Setup/GitExtensions-Portable-$version.zip"
+    },
+    "post_install": [
+        "(Get-Content -path \"$dir\\GitExtensions\\GitExtensions.exe.config\" -Raw) -replace '(?ms)IsPortable(.*?)False', 'IsPortable$1True' | Set-Content -path \"$dir\\GitExtensions\\GitExtensions.exe.config\"",
+        "Copy-Item \"$persist_dir\\GitExtensionsShellEx64.dll\" \"$dir\\GitExtensions\"",
+        "Copy-Item \"$persist_dir\\GitExtensionsShellEx32.dll\" \"$dir\\GitExtensions\""
+    ],
+    "persist": [
+        "GitExtensions\\GitExtensions.settings",
+        "GitExtensions\\Images",
+        "GitExtensions\\Recent"
+    ]
+}
