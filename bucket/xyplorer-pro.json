@@ -8,13 +8,13 @@
     "bin": [
         [
             "XYPlorer.exe",
-            "XYPlorer"
+            "XYPlorerPro"
         ]
     ],
     "shortcuts": [
         [
             "XYPlorer.exe",
-            "XYPlorer"
+            "XYPlorerPro"
         ]
     ],
     "checkver": {
