@@ -1,16 +1,16 @@
 {
     "homepage": "https://explorerplusplus.org",
-    "version": "1.4.0.800",
+    "version": "1.4.0.801",
     "license": "GPL-3.0-only",
     "description": "Explorer++ is a lightweight and fast file manager for windows (latest appveyor build)",
     "architecture": {
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/78mm6i08lsnfvq20/artifacts/explorer++_x86.zip",
-            "hash": "8541294004fd50c562b418fbfde3fbb3781e13bcde0c070596796178813ac194"
+            "url": "https://ci.appveyor.com/api/buildjobs/xqy567dnsyx6cn7l/artifacts/explorer++_x86.zip",
+            "hash": "9fb8d7027623cbabab5080c49f9e3147fdf88b664769e4ab88175666b3cc05a0"
         },
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/857630uj88gp0wbl/artifacts/explorer++_x64.zip",
-            "hash": "22029a5bfacac7dd6b4f93cc320b8b16fa9b8aa9c6532ed3666287fe14a621d9"
+            "url": "https://ci.appveyor.com/api/buildjobs/6525u31fe15cxd8j/artifacts/explorer++_x64.zip",
+            "hash": "0732b03316a2e7f6b177b68a55f8c86824cb00e4af947aab14d08d2c4ccae538"
         }
     },
     "bin": [
