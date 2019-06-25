@@ -1,11 +1,11 @@
 {
     "homepage": "https://gitextensions.github.io/",
-    "version": "3.2.0.6198",
+    "version": "3.2.0.6222",
     "license": "GPL-3.0-only",
     "description": "Git Standalone UI Tool. Installs latest appveyor build of master branch",
     "notes": "Post install script will convert app to portable mode.",
-    "url": "https://ci.appveyor.com/api/buildjobs/p239b5se7giru35s/artifacts/Setup/GitExtensions-Portable-3.2.0.6198.zip",
-    "hash": "749ef2c306f35bb1ae81319f3b6f467908f8ac55ae2b77adf60b3ef267d45860",
+    "url": "https://ci.appveyor.com/api/buildjobs/xfbkqre5sptjaim7/artifacts/Setup/GitExtensions-Portable-3.2.0.6222.zip",
+    "hash": "a30d7d603b6c3844aaad665a7438bd0f2638d7abc02970c6a62ba4c86bbf0461",
     "bin": [
         [
             "GitExtensions\\GitExtensions.exe",
