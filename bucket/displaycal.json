@@ -1,0 +1,40 @@
+{
+    "homepage": "https://displaycal.net",
+    "license": "GPL-3.0-or-higher",
+    "description": "Open Source Display Calibration and Characterization powered by ArgyllCMS",
+    "version": "3.8.3",
+    "url": "https://sourceforge.net/projects/dispcalgui/files/release/3.8.3.0/DisplayCAL-3.8.3.0-win32.zip",
+    "hash": "sha1:1d67216695aee076b4659c935cffa51b158b0a5b",
+    "extract_dir": "DisplayCal-3.8.3.0",
+    "bin": "DisplayCal.exe",
+    "shortcuts": [
+        [
+            "DisplayCal.exe",
+            "DisplayCal/DisplayCal"
+        ],
+        [
+            "DisplayCal-apply-profiles.exe",
+            "DisplayCal/DisplayCal Profile Loader"
+        ],
+        [
+            "DisplayCal-profile-info.exe",
+            "DisplayCal/DisplayCal Profile Info"
+        ],
+        [
+            "DisplayCal-testchart-editor.exe",
+            "DisplayCal/DisplayCal Testchart Editor"
+        ],
+        [
+            "DisplayCal-curve-viewer.exe",
+            "DisplayCal/DisplayCal Curve Viewer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://displaycal.net",
+        "regex": "\"version\">([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/dispcalgui/files/release/$version.0/DisplayCAL-$version.0-win32.zip",
+        "extract_dir": "DisplayCal-$version.0"
+    }
+}
