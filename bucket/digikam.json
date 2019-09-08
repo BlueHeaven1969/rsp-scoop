@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.digikam.org",
     "description": "Professional Photo Management with the Power of Open Source",
-    "version": "6.2.0",
+    "version": "6.3.0",
     "license": "GPL-2.0-only",
     "architecture": {
         "32bit": {
-            "url": "http://download.kde.org/stable/digikam/6.2.0/digiKam-6.2.0-Win32.exe#/dl.7z",
-            "hash": "b8ba67978125316f64b0d94081e24465fd3e86f467c6ec25f6512c33b3388939"
+            "url": "http://download.kde.org/stable/digikam/6.3.0/digiKam-6.3.0-Win32.exe#/dl.7z",
+            "hash": "1eeb0859c5ccad89d4ea7f16a2af2d7b1dc9c4ee2968082221aed26ef0625d3d"
         },
         "64bit": {
-            "url": "http://download.kde.org/stable/digikam/6.2.0/digiKam-6.2.0-Win64.exe#/dl.7z",
-            "hash": "d8a194b62abb55baf9ca6a61aca6290bcecdf4cb9915208848c00843852c0c82"
+            "url": "http://download.kde.org/stable/digikam/6.3.0/digiKam-6.3.0-Win64.exe#/dl.7z",
+            "hash": "a498d34bd72ce3428138ec2288a5287a781b00cb49b3eb7d93b400c2705ff449"
         }
     },
     "bin": "digikam.exe",
