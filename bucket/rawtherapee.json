@@ -2,9 +2,9 @@
     "homepage": "https://rawtherapee.com",
     "license": "GPL-3.0-only",
     "description": "RawTherapee is a cross-platform raw image processing program",
-    "version": "5.6",
-    "url": "https://rawtherapee.com/releases_head/windows/RawTherapee_5.6_WinVista_64.zip",
-    "hash": "e3663615584c01ab979cb86cd8f2858ac5845bfee7b06139e96cefc8770d65cc",
+    "version": "5.7",
+    "url": "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip",
+    "hash": "7cbff5cbfcdff1b9f21f140baeb6518fbfe1de66ae64dc3cee20c059b6db0265",
     "depends": "innounp",
     "installer": {
         "script": [
@@ -22,9 +22,9 @@
     ],
     "checkver": {
         "url": "https://rawtherapee.com/downloads",
-        "regex": "releases_head/windows/RawTherapee_([\\d.]+)_WinVista_64.zip"
+        "regex": "shared/builds/windows/RawTherapee_([\\d.]+)_WinVista_64.zip"
     },
     "autoupdate": {
-        "url": "https://rawtherapee.com/releases_head/windows/RawTherapee_$version_WinVista_64.zip"
+        "url": "https://rawtherapee.com/shared/builds/windows/RawTherapee_$version_WinVista_64.zip"
     }
 }
