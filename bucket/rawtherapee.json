@@ -6,11 +6,13 @@
     "url": "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip",
     "hash": "7cbff5cbfcdff1b9f21f140baeb6518fbfe1de66ae64dc3cee20c059b6db0265",
     "depends": "innounp",
+    "pre_install": [
+        "Get-ChildItem \"$dir\\RawTherapee_*.exe\" | Rename-Item -NewName \"$dir\\RawTherapeeInstall.exe\""
+    ],
     "installer": {
         "script": [
-            "$installer = $fname -replace '.zip', '.exe'",
-            "Expand-InnoArchive -Path \"$dir\\$installer\"",
-            "Remove-Item -Path \"$dir\\$installer\""
+            "Expand-InnoArchive -Path \"$dir\\RawTherapeeInstall.exe\"",
+            "Remove-Item -Path \"$dir\\RawTherapeeInstall.exe\""
         ]
     },
     "bin": "RawTherapee.exe",
