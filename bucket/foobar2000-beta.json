@@ -1,0 +1,31 @@
+{
+    "version": "1.5_beta_16",
+    "homepage": "https://www.foobar2000.org/",
+    "description": "An advanced freeware audio player for the Windows platform.",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.foobar2000.org/license"
+    },
+    "url": "https://www.videohelp.com/download/foobar2000_v1.5_beta_16.exe#/dl.7z",
+    "hash": "0fe4fe6def0743bc411957ea71cbcaa9ebc301f04361c84f299f7d2431a056ca",
+    "bin": "foobar2000.exe",
+    "shortcuts": [
+        [
+            "foobar2000.exe",
+            "Foobar2000"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Force -Recurse",
+            "New-Item \"$dir\\user_profiles_enabled\" -Force | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.foobar2000.org/download",
+        "regex": "Latest beta version[\\s\\S]*foobar2000_v(.*?).exe"
+    },
+    "autoupdate": {
+        "url": "https://www.videohelp.com/download/foobar2000_v$version.exe#/dl.7z"
+    }
+}
