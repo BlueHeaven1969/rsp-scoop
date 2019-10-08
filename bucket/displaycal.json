@@ -5,7 +5,7 @@
     "version": "3.8.7.1",
     "url": "https://sourceforge.net/projects/dispcalgui/files/release/3.8.7.1/DisplayCAL-3.8.7.1-win32.zip",
     "hash": "sha1:3b914fe871f29f2a6b56cbb244a293a18f5b1c09",
-    "extract_dir": "DisplayCal-3.8.7.1.0",
+    "extract_dir": "DisplayCal-3.8.7.1",
     "bin": "DisplayCal.exe",
     "shortcuts": [
         [
@@ -35,6 +35,6 @@
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/dispcalgui/files/release/$version/DisplayCAL-$version-win32.zip",
-        "extract_dir": "DisplayCal-$version.0"
+        "extract_dir": "DisplayCal-$version"
     }
 }
