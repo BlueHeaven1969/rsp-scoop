@@ -2,10 +2,10 @@
     "homepage": "https://displaycal.net",
     "license": "GPL-3.0-or-higher",
     "description": "Open Source Display Calibration and Characterization powered by ArgyllCMS",
-    "version": "3.8.7.1",
-    "url": "https://sourceforge.net/projects/dispcalgui/files/release/3.8.7.1/DisplayCAL-3.8.7.1-win32.zip",
-    "hash": "sha1:3b914fe871f29f2a6b56cbb244a293a18f5b1c09",
-    "extract_dir": "DisplayCal-3.8.7.1",
+    "version": "3.8.8.0",
+    "url": "https://sourceforge.net/projects/dispcalgui/files/release/3.8.8.0/DisplayCAL-3.8.8.0-win32.zip",
+    "hash": "sha1:835599a11f57753358a1f99ebdce45bee501995f",
+    "extract_dir": "DisplayCal-3.8.8.0",
     "bin": "DisplayCal.exe",
     "shortcuts": [
         [
@@ -31,7 +31,7 @@
     ],
     "checkver": {
         "url": "https://displaycal.net",
-        "regex": "\"version\">([\\d.]+)"
+        "regex": "/Downloads/DisplayCAL-([\\d.]+).pkg"
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/dispcalgui/files/release/$version/DisplayCAL-$version-win32.zip",
