@@ -2,17 +2,17 @@
     "homepage": "https://wavedrom.com",
     "license": "MIT",
     "description": "WaveDrom draws your Timing Diagram or Waveform from simple textual description.",
-    "version": "2.1.2",
+    "version": "2.1.8",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/wavedrom/wavedrom.github.io/releases/download/v2.1.2/wavedrom-editor-v2.1.2-win-ia32.zip",
-            "extract_dir": "wavedrom-editor-v2.1.2-win-ia32",
-            "hash": "74db6995f1a8c5586675a3e029dba81c54fbecb73d15a0e1e6a67f96107443ad"
+            "url": "https://github.com/wavedrom/wavedrom.github.io/releases/download/v2.1.8/wavedrom-editor-v2.1.8-win-ia32.zip",
+            "extract_dir": "wavedrom-editor-v2.1.8-win-ia32",
+            "hash": "e9783f917f42ebe543abb975457f62cfde135825301f476c52911e0a214dc61f"
         },
         "64bit": {
-            "url": "https://github.com/wavedrom/wavedrom.github.io/releases/download/v2.1.2/wavedrom-editor-v2.1.2-win-x64.zip",
-            "extract_dir": "wavedrom-editor-v2.1.2-win-x64",
-            "hash": "15309fb26b8bc93122e63a74dd8058c408ac23b008436a0c64562dc7b93c48aa"
+            "url": "https://github.com/wavedrom/wavedrom.github.io/releases/download/v2.1.8/wavedrom-editor-v2.1.8-win-x64.zip",
+            "extract_dir": "wavedrom-editor-v2.1.8-win-x64",
+            "hash": "0a1e3d45bae29267ade62a5f1832add2eadbdc49a1c4deb5947d85c1d93d1224"
         }
     },
     "bin": "wavedrom-editor.exe",
