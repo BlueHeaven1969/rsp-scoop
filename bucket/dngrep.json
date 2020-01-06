@@ -1,16 +1,16 @@
 {
     "homepage": "http://dngrep.github.io/",
     "description": "Graphical GREP tool for Windows",
-    "version": "2.9.184",
+    "version": "2.9.189",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dnGrep/dnGrep/releases/download/v2.9.184.0/dnGREP.2.9.184.x64.msi",
-            "hash": "94dcb5325c6fb5bbbfb031add066cf1014e2cd29293f138d7110c9c774ffdb25"
+            "url": "https://github.com/dnGrep/dnGrep/releases/download/v2.9.189.0/dnGREP.2.9.189.x64.msi",
+            "hash": "4bd6e3c40f41921240d7dd2e5eb10e0617dd73a4b65a77cf744307f6eb604036"
         },
         "32bit": {
-            "url": "https://github.com/dnGrep/dnGrep/releases/download/v2.9.184.0/dnGREP.2.9.184.x86.msi",
-            "hash": "29d37556e28f463794aa8079da86c5468786cdc5ba025b2eedc0fe3d5d67b92a"
+            "url": "https://github.com/dnGrep/dnGrep/releases/download/v2.9.189.0/dnGREP.2.9.189.x86.msi",
+            "hash": "071e1ca82be474ad272f2a8cb21056e45412a744d41f1a75add66e50a181b58e"
         }
     },
     "bin": "dnGREP.exe",
