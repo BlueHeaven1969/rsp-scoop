@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.xyplorer.com",
-    "version": "20.60.0300",
+    "version": "20.60.0400",
     "license": "Shareware",
     "description": "File Manager for Windows",
     "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
-    "hash": "62f1430ea88db9e4886850df31b7cc7e0dac5a2365bec6c5f97631a3b8d59eaf",
+    "hash": "9f6ae0f5e2722d85938419cd51350a1439ca4f383dead4241a00f69abb200126",
     "bin": [
         [
             "XYPlorer.exe",
