@@ -35,5 +35,6 @@
         ]
     ],
     "persist": "dnGREP.Settings.dat",
+    "pre_install": "Add-Content \"$dir\\dnGREP.Settings.dat\" $null",
     "extract_dir": "dnGREP"
 }
