@@ -69,3 +69,30 @@ INFO    , cc_simulator.aggregate._config               , 2021-05-28 09:36:03.634
  'ot_rpi': 100000,
  'to_network_conn_params': {'conn_size': 36},
  'to_rpi': 100000}
+INFO    , SCRIPT                                       , 2021-06-15 09:49:20.398, This text has a SCRIPT header added to it
+INFO    , cip_simulator.cc.agg._config                 , 2021-06-15 09:49:20.399, Originator - Ip Address: 192.168.1.10, Name: Primary
+INFO    , cip_simulator.cc.agg._config                 , 2021-06-15 09:49:20.399, Target - Ip Address: 192.168.1.9, Slot Numbers: [3] Name: Adapter_E
+INFO    , cip_simulator.cc.agg._config                 , 2021-06-15 09:49:20.400, Participant - Slot Numbers: [3] identifier: 1 connection_parameters {'conn_serial_num': 11,
+ 'ioi_path': [ClassId(895),
+              InstanceId(1),
+              ConnectionPoint(110),
+              ConnectionPoint(101)],
+ 'orig_serial_num': 2,
+ 'orig_vendor_id': 1,
+ 'ot_network_conn_params': {'conn_size': 1},
+ 'ot_rpi': 500000,
+ 'to_network_conn_params': {'conn_size': 5},
+ 'to_rpi': 500000}
+INFO    , cip_simulator.cc.agg._config                 , 2021-06-15 09:49:20.401, Participant - Slot Numbers: [3] identifier: 2 connection_parameters {'conn_serial_num': 12,
+ 'ioi_path': [ClassId(895),
+              InstanceId(1),
+              ConnectionPoint(111),
+              ConnectionPoint(102)],
+ 'orig_serial_num': 2,
+ 'orig_vendor_id': 1,
+ 'ot_network_conn_params': {'conn_size': 32},
+ 'ot_rpi': 500000,
+ 'to_network_conn_params': {'conn_size': 36},
+ 'to_rpi': 500000}
+INFO    , cip_simulator._resources._connection         , 2021-06-15 09:49:20.401, <cip_simulator._resources._cc.Connection object at 0x03F49670>, timeout=9
+DEBUG   , cip_simulator.cc.agg.originator._agg         , 2021-06-15 09:49:20.436, <cip_simulator.cc.agg.originator._agg.ConcurrentConnection object at 0x03F49400>, starting UDP servers
