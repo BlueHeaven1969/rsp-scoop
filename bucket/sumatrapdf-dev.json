@@ -5,12 +5,12 @@
     "license": "GPL-3.0-only,BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel-64.exe",
-            "hash": "cbed83c3fe0df2c284937469a3bfb8b2b3f7b5ae6e00bb96cd10ba2ddb92c356"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel-64.zip",
+            "hash": "cd7b5a0402fc5e7a653c715f3f836d34103545504cdf14c44fcc25e975f0eaed"
         },
         "32bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel.exe",
-            "hash": "71724192cd88f063f6d91fd4df4ab78e4e91dd29dbb430f4fd5bd8d63a58508b"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel.zip",
+            "hash": "8635fe6d2493dd1416faac2f8c78e275e0d591922634571be8017f8e99b03508"
         }
     },
     "pre_install": [
@@ -19,8 +19,13 @@
         "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
         "    $CONT = @('CheckForUpdates = false')",
         "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
-        "}"
+        "}",
+		"touch \"$dir\\SumatraPDF.exe\""
     ],
+	"post_install": [
+		"del \"$dir\\SumatraPDF.exe\"",
+		"mv \"$dir\\SumatraPDF-prerel-$version-64.exe\" \"$dir\\SumatraPDF.exe\""
+	],
     "checkver": {
         "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/sumatralatest.js",
         "regex": "sumLatestVer = ([\\d]+)"
@@ -28,10 +33,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel-64.exe"
+                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel-64.zip"
             },
             "32bit": {
-                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel.exe"
+                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel.zip"
             }
         }
     },
