@@ -1,16 +1,16 @@
 {
-    "version": "14012",
+    "version": "14025",
     "description": "Free PDF, eBook reader.",
     "homepage": "https://www.sumatrapdfreader.org",
     "license": "GPL-3.0-only,BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/SumatraPDF-prerel-14012-64.exe#/SumatraPDF.exe",
-            "hash": "4d0be7107ded0dc2f31b44fa148dbb24967ee4caf92559397cef91317174116b"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel-64.exe",
+            "hash": "cbed83c3fe0df2c284937469a3bfb8b2b3f7b5ae6e00bb96cd10ba2ddb92c356"
         },
         "32bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/SumatraPDF-prerel-14012.exe#/SumatraPDF.exe",
-            "hash": "711cd30ec7cda4b1b91acc3746a95f5dc46ebbf3b63585c795236f6154f16789"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel.exe",
+            "hash": "71724192cd88f063f6d91fd4df4ab78e4e91dd29dbb430f4fd5bd8d63a58508b"
         }
     },
     "pre_install": [
@@ -23,15 +23,15 @@
     ],
     "checkver": {
         "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/sumatralatest.js",
-        "regex": "sumLatestExe.*https://(?<url>.*-([\\d]+))"
+        "regex": "sumLatestVer = ([\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchUrl-64.exe#/SumatraPDF.exe"
+                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel-64.exe"
             },
             "32bit": {
-                "url": "https://$matchUrl.exe#/SumatraPDF.exe"
+                "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/$version/SumatraPDF-prerel.exe"
             }
         }
     },
