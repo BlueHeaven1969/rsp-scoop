@@ -1,16 +1,16 @@
 {
-    "version": "14025",
+    "version": "14041",
     "description": "Free PDF, eBook reader.",
     "homepage": "https://www.sumatrapdfreader.org",
     "license": "GPL-3.0-only,BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel-64.zip",
-            "hash": "cd7b5a0402fc5e7a653c715f3f836d34103545504cdf14c44fcc25e975f0eaed"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14041/SumatraPDF-prerel-64.zip",
+            "hash": "c5eeb59aef0080af802c8378d91014dd820e50e5ff1490816a6613b5bc58dd58"
         },
         "32bit": {
-            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14025/SumatraPDF-prerel.zip",
-            "hash": "8635fe6d2493dd1416faac2f8c78e275e0d591922634571be8017f8e99b03508"
+            "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/prerel/14041/SumatraPDF-prerel.zip",
+            "hash": "f84f94939e797a3e75edf3dec8c9d544bc71f52e67c06e7a195090bc51d9859b"
         }
     },
     "pre_install": [
@@ -20,12 +20,12 @@
         "    $CONT = @('CheckForUpdates = false')",
         "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
         "}",
-		"touch \"$dir\\SumatraPDF.exe\""
+        "touch \"$dir\\SumatraPDF.exe\""
     ],
-	"post_install": [
-		"del \"$dir\\SumatraPDF.exe\"",
-		"mv \"$dir\\SumatraPDF-prerel-$version-64.exe\" \"$dir\\SumatraPDF.exe\""
-	],
+    "post_install": [
+        "del \"$dir\\SumatraPDF.exe\"",
+        "mv \"$dir\\SumatraPDF-prerel-$version-64.exe\" \"$dir\\SumatraPDF.exe\""
+    ],
     "checkver": {
         "url": "https://kjkpubsf.sfo2.digitaloceanspaces.com/software/sumatrapdf/sumatralatest.js",
         "regex": "sumLatestVer = ([\\d]+)"
