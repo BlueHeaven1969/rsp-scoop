@@ -5,7 +5,7 @@
     "bin": "usbtreeview.exe",
     "checkver": "USB Device Tree Viewer V([\\d.]+)",
     "description": "USB device tree viewer",
-    "hash": "8edc205d7b8c6b1570fa8391203b47a5080442588d51e6764d4526ed0ee65d42",
+    "hash": "5395c7ce91a5cea5ea009532676ed7a32718b1d5c3d781bbab7183acf770dd88",
     "homepage": "http://www.uwe-sieber.de/usbtreeview_e.html",
     "license": "Freeware",
     "shortcuts": [
@@ -15,5 +15,5 @@
         ]
     ],
     "url": "http://www.uwe-sieber.de/files/usbtreeview.zip",
-    "version": "3.7.3"
+    "version": "3.7.4"
 }
