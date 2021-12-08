@@ -14,7 +14,7 @@
     ],
     "checkver": {
         "url": "https://github.com/garglk/garglk/releases",
-        "regex": "/tag/(?<version>.*?(?<short>[\\d.]+))\">"
+        "regex": "/tag/(?<version>.*?(?<short>[\\d.]+))\""
     },
     "autoupdate": {
         "url": "https://github.com/garglk/garglk/releases/download/$version/gargoyle-$matchShort-windows.exe#/dl.7z"
