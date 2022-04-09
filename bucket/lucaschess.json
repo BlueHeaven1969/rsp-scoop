@@ -12,11 +12,4 @@
             "Lucas Chess"
         ]
     ],
-    "checkver": {
-        "url": "https://github.com/lukasmonk/lucaschess/releases",
-        "regex": "lukasmonk\\/lucaschess\\/releases\\/tag.*Version.*?([\\d.]+)"
-    },
-    "autoupdate": {
-        "url": "https://bintray.com/artifact/download/lukasmonk/generic/LucasChessPortable$cleanVersion.exe#/dl.7z"
-    }
 }
