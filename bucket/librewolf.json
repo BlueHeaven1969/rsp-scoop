@@ -1,0 +1,44 @@
+{
+    "version": "103.0-3",
+    "description": "A fork of Firefox, focused on privacy, security and freedom.",
+    "homepage": "https://librewolf.net/",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/22dfe2a3b672afe1dac5563e61cbf4e1/librewolf-103.0-3.en-US.win64-portable.zip",
+            "hash": "70118d3cef5125e17138ce3f3e535ed478e6c2c7e2ea6a851792575791828de7"
+        }
+    },
+    "pre_install": [
+        "$lw_name = (Get-Item \"$dir\\librewolf-*\").FullName",
+        "Move-Item \"$lw_name\\*\" \"$dir\"",
+        "Remove-Item \"$lw_name\""
+    ],
+    "bin": [
+        [
+            "librewolf-portable.exe",
+            "librewolf"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "librewolf-portable.exe",
+            "LibreWolf"
+        ]
+    ],
+    "persist": "Profiles",
+    "checkver": {
+        "url": "https://gitlab.com/api/v4/projects/13852981/releases",
+        "regex": "/uploads/(?<randidsha>[a-z0-9]+)/sha256sums\\.txt\".*?/uploads/(?<randidzip>[a-z0-9]+)/librewolf-([\\d.-]+)\\.en-US\\.win64-portable\\.zip\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$matchRandidzip/librewolf-$version.en-US.win64-portable.zip",
+                "hash": {
+                    "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/$matchRandidsha/sha256sums.txt"
+                }
+            }
+        }
+    }
+}
