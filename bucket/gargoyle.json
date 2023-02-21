@@ -2,9 +2,9 @@
     "homepage": "https://github.com/garglk/garglk",
     "license": "Various",
     "description": "A cross-platform IO layer for an interactive fiction player ",
-    "version": "2022.1",
-    "url": "https://github.com/garglk/garglk/releases/download/2022.1/gargoyle-2022.1-windows-x86_64.exe#/dl.7z",
-    "hash": "a500b6022bcbb56d5d8232092156bcc84dfaa4814b0fef0f0ca8407a3a198b13",
+    "version": "2023.1",
+    "url": "https://github.com/garglk/garglk/releases/download/2023.1/gargoyle-2023.1-windows-x86_64.exe#/dl.7z",
+    "hash": "b2638bbd66bfc430c8945754f2239e9fb4234f063a2d4cb072761a6cbe7f1b48",
     "bin": "gargoyle.exe",
     "shortcuts": [
         [
